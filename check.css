@@ -1,0 +1,450 @@
+/*Css reset Properties*/
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+body{
+    background-color: lightgray;
+    
+}
+.bg{
+    background-color:cornflowerblue;
+    height: 200px;
+    display: flex;
+    border-radius: 2px 2px 22px 22px ;
+}
+nav{
+    background:#1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 3rem;
+    color: cyan;
+    margin: 2px 15px;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 0px 15px;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+li a:hover,.active{
+    background: white;
+    border-radius: 5px;
+    color: black;  
+}
+.menubtn{
+    color: white;
+    font-size: 20px;
+    margin: 0px 25px;
+    display: none;
+    cursor: pointer;
+}
+#click{
+    display: none;
+}
+.about{
+    display: flex;
+    height: 65vh;
+}
+
+.pic{
+    
+    
+    width: 45%;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 100px;
+    z-index: 1;
+    margin-top: -18%;
+    height: 80vhh;
+}
+
+
+.pp{
+    font-family: 'El Messiri', sans-serif;
+    width: 45%;
+    
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: left;
+    
+    
+}
+h1{
+    
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 60px;
+    margin-left: 30px;
+    text-shadow: 2px 2px red;
+}
+.profession{
+    font-size: 25px;
+    text-shadow: 0.1px 1.2px tomato;
+    font-weight: bold;
+    margin-left: 10px;
+}
+span{
+    margin-left: 150px;
+}
+span i{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    
+}
+.fa-facebook:hover{color:rgb(0, 110, 255)}
+.fa-instagram:hover{color:rgb(224, 55, 202)}
+.fa-twitter:hover{color:rgb(65, 188, 236)}
+
+.info-1{
+    margin: 20px 10px;
+    padding: 15px 15px;
+}
+
+footer{
+    text-align: center;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 22px;
+    padding: 15px 2px;
+    letter-spacing: 2px;
+}
+.phone{
+    display: none;
+}
+
+
+@media(max-width:890px){
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color:black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.8s ease;
+        z-index: 2;
+    }
+    #click:checked ~ ul{
+        left: 0%;  
+    }
+    #cliick:checked ~ .menubtn i:before{
+        content: "\f00d";
+    }
+    nav ul li{
+        margin: 70px 0;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        background: none;
+        color:cyan;
+    }
+    .menubtn{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 25px;
+        font-weight: 800px;
+    }
+    
+    .about{
+        display: none;
+    }
+
+    .phone{
+        display: block;
+    }
+    .mobile img{
+        height: 30vh;
+        width: 80vw;
+        z-index: 5;
+        margin-top: -20%;
+        
+    }
+    .mobile{
+        text-align: center;
+    }
+}
+
+
+
+
+@media(max-width:430px){
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color:black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.8s ease;
+        z-index: 2;
+    }
+    #click:checked ~ ul{
+        left: 0%;  
+    }
+    #cliick:checked ~ .menubtn i:before{
+        content: "\f00d";
+    }
+    nav ul li{
+        margin: 70px 0;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        background: none;
+        color:cyan;
+    }
+    .menubtn{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 25px;
+        font-weight: 800px;
+    }
+    
+    .about{
+        display: none;
+    }
+
+    .phone{
+        display: block;
+    }
+    .mobile img{
+        
+        height: 30vh;
+        width: 80vw;
+        z-index: 5;
+        margin-top: -20%;
+        
+    }
+    .mobile{
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;
+        text-shadow: 0.1px 1.2px tomato;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .mob-profession{
+        text-align: center;
+        text-shadow: 0.1px 1px black;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    div .mob-icons {
+        display:flex;
+       justify-content: center;
+       margin-top: 10px;
+    }
+    div .mob-icons i{
+        padding: 2px 10px;
+        font-size: 20px;
+    }
+    .fa-facebook:hover{color:rgb(0, 110, 255)}
+    .fa-instagram:hover{color:rgb(224, 55, 202)}
+    .fa-twitter:hover{color:rgb(65, 188, 236)}
+
+    .info-2{
+        text-align: center;
+        padding: 5px 10px;
+        margin: 15px 2px;
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width:430px) and (max-width:600px){
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color:black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.8s ease;
+        z-index: 2;
+    }
+    #click:checked ~ ul{
+        left: 0%;  
+    }
+    #cliick:checked ~ .menubtn i:before{
+        content: "\f00d";
+    }
+    nav ul li{
+        margin: 70px 0;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        background: none;
+        color:cyan;
+    }
+    .menubtn{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 25px;
+        font-weight: 800px;
+    }
+    
+    .about{
+        display: none;
+    }
+
+    .phone{
+        display: block;
+    }
+    .mobile img{
+        
+        height: 40vh;
+        width: 80vw;
+        z-index: 5;
+        margin-top: -20%;
+        
+    }
+    .mobile{
+        text-align: center;
+    }
+    h2{
+        font-size: 40px;
+        text-shadow: 0.1px 1.2px tomato;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .mob-profession{
+        text-align: center;
+        text-shadow: 0.1px 1px black;
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    div .mob-icons {
+        display:flex;
+       justify-content: center;
+       margin-top: 10px;
+    }
+    div .mob-icons i{
+        padding: 2px 10px;
+        font-size: 22px;
+    }
+    .fa-facebook:hover{color:rgb(0, 110, 255)}
+    .fa-instagram:hover{color:rgb(224, 55, 202)}
+    .fa-twitter:hover{color:rgb(65, 188, 236)}
+
+    .info-2{
+        text-align: center;
+        padding: 5px 10px;
+        margin: 15px 2px;
+        font-size: 20px;
+    }
+}
+@media (min-width:600px) and (max-width:890px){
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color:black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.8s ease;
+        z-index: 2;
+    }
+    #click:checked ~ ul{
+        left: 0%;  
+    }
+    #cliick:checked ~ .menubtn i:before{
+        content: "\f00d";
+    }
+    nav ul li{
+        margin: 70px 0;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        background: none;
+        color:cyan;
+    }
+    .menubtn{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 25px;
+        font-weight: 800px;
+    }
+    
+    .about{
+        display: none;
+    }
+
+    .phone{
+        display: block;
+    }
+    .mobile img{
+        
+        height: 43vh;
+        width: 80vw;
+        z-index: 5;
+        margin-top: -20%;
+        
+    }
+    .mobile{
+        text-align: center;
+    }
+    h2{
+        font-size: 50px;
+        text-shadow: 0.1px 1.2px tomato;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .mob-profession{
+        text-align: center;
+        text-shadow: 0.1px 1px black;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    div .mob-icons {
+        display:flex;
+       justify-content: center;
+       margin-top: 10px;
+    }
+    div .mob-icons i{
+        padding: 2px 10px;
+        font-size: 25px;
+    }
+    .fa-facebook:hover{color:rgb(0, 110, 255)}
+    .fa-instagram:hover{color:rgb(224, 55, 202)}
+    .fa-twitter:hover{color:rgb(65, 188, 236)}
+
+    .info-2{
+        text-align: center;
+        padding: 5px 10px;
+        margin: 15px 2px;
+        font-size: 20px;
+    }
+}
